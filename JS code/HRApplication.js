@@ -1,14 +1,5 @@
 
-
-//read
-
-
-//const jsonrecords = "recordsJSON";
-
-//fetch(recordsJSON)
-//  .then(response => console.log(response));
-
-//add
+//Add
 
 
 
@@ -19,16 +10,46 @@ function pushData() {
     recordsJSON.push(recordinputs);
 }
 
-submit.addEventListener("click", pushData(), (e) => {
+
+//Edit
+
+
+
+//Delete
+
+function delRec() {
+
+    console.log("remove post")
+
+}
+
+
+
+
+//Event Listeners
+
+submit.addEventListener("click", pushData, (e) => {
+    e.preventDefault();
+    console.log("error");
+
+
+
+});
+
+d1.addEventListener("click", delRec(), (e) => {
     e.preventDefault();
     console.log("error");
 
 });
 
+//e1.addEventListener("click", editRec(), (e) => {
+//    e.preventDefault();
+//    console.log("error");
+
+//});
 
 
 
-//delete
 
 //JSON
 
