@@ -11,7 +11,11 @@ function pushData() {
 }
 
 
-//Edit
+//READING EXISTING RECORDS
+
+//const records = recordsJSON;
+
+//console.log(records.indexOf("NI Number"));
 
 
 
@@ -19,7 +23,7 @@ function pushData() {
 
 function delRec() {
 
-    console.log("remove post")
+    recordsJSON.splice(0);
 
 }
 
@@ -53,26 +57,25 @@ d1.addEventListener("click", delRec(), (e) => {
 
 //JSON
 
-var recordsJSON =
+var recordsJSON = [
 
-    [
-        {
-            "NI Number": "1111111111",
-            "Full Name": "John Meissner",
-            "Phone Number": "01793 1111111",
-            "Address": "1 null street, nulltown, N11 1NN",
-            "Department": "IT"
-        },
+    {
+        "NI Number": "1111111111",
+        "Full Name": "John Meissner",
+        "Phone Number": "01793 1111111",
+        "Address": "1 null street, nulltown, N11 1NN",
+        "Department": "IT"
+    },
 
-        {
-            "NI Number": "22222222222",
-            "Full Name": "Bob Smith",
-            "Phone Number": "01793 22222222",
-            "Address": "2 null street, nulltown, N22 2NN",
-            "Department": "HR"
-        },
+    {
+        "NI Number": "22222222222",
+        "Full Name": "Bob Smith",
+        "Phone Number": "01793 22222222",
+        "Address": "2 null street, nulltown, N22 2NN",
+        "Department": "HR"
+    },
 
-    ]
+]
 
 
 
